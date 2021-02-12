@@ -26,7 +26,6 @@ class Hero():
 
 
 def create_main_window():
-    
 
     layout = [[sg.T('Edit Hero')],
               [sg.B('Health -1'), sg.B('Health +1')],
@@ -40,6 +39,7 @@ def create_main_window():
 
 
 def main():
+    
     window = None
     hero = Hero()
 
@@ -68,4 +68,5 @@ def main():
             window['-EXPERIENCE-'].update(hero.getExperience())
     window.close()
 
+    
 main()
