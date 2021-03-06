@@ -43,7 +43,7 @@ def main():
     window = None
     hero = Hero()
 
-    while True:  # Event Loop
+    while True:
         if window is None:
             window = create_main_window().finalize()
             window.set_min_size((640, 480))
